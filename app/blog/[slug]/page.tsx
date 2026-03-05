@@ -5,7 +5,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 // Tell Next.js which slugs to pre-render at build time
@@ -16,12 +16,14 @@ export async function generateStaticParams() {
 
 // Dynamic page title from frontmatter
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = await getPost(params.slug)
+  const { slug } = await params
+  const post = await getPost(slug)
   return { title: post.title }
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const post = await getPost(params.slug)
+  const { slug } = await params
+  const post = await getPost(slug)
 
   return (
     <>
