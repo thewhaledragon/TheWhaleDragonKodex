@@ -1,7 +1,13 @@
 import type { Metadata } from 'next'
+import { Lexend } from 'next/font/google'
 import './globals.css'
 
-// ✏️ Change this to your site name and description
+const lexend = Lexend({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lexend',
+})
+
 export const metadata: Metadata = {
   title: {
     default: 'TheWhaleDragonKodex',
@@ -16,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={lexend.variable}>
+      <body className="antialiased">{children}</body>
     </html>
   )
 }
