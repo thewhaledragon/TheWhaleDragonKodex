@@ -10,8 +10,8 @@ const lexend = Lexend({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TheWhaleDragonKodex',
-    template: '%s · TheWhaleDragonKodex',
+    default: 'The Kodex',
+    template: '%s · The Kodex',
   },
   description: 'Writing about AI x Music.',
 }

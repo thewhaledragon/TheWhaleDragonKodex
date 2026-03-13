@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Humble, factual introduction with bullet points to the "About Me" page.
+- Adjusted horizontal spacing on the "About Me" page using robust inline styles for reliable centering and 2rem side padding.
+- Redesigned "About Me" hero section to match the home page's heading style (tag text, gradient bar, and bold title).
 
 ### Changed
 - Renamed About page main title to "About Me".

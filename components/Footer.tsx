@@ -9,7 +9,7 @@ export default function Footer() {
       letterSpacing: '0.01em',
     }}>
       <p>
-        © {new Date().getFullYear()} TheWhaleDragonKodex ·{' '}
+        © {new Date().getFullYear()} The Kodex ·{' '}
         <a
           href="https://github.com/thewhaledragon"
           style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 500 }}
