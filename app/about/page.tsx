@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About | TheWhaleDragonKodex',
+  title: 'About | The Kodex',
   description:
     'AI/ML researcher building multi-agent systems, financial forecasting models, and simulation pipelines.',
 }
@@ -155,14 +155,39 @@ export default function AboutPage() {
 
       <Header />
 
-      <main className="mx-auto max-w-3xl px-6 py-24">
+      <main style={{ maxWidth: '700px', margin: '0 auto', padding: '3.5rem 2rem 6rem' }}>
 
         {/* ── Hero ── */}
         <section className="mb-24 animate-fade-up">
 
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-8 text-[var(--text)]">
-            About Me
-          </h1>
+          <div style={{ marginBottom: '3rem' }}>
+            <p style={{
+              fontSize: '0.72rem',
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: 'var(--accent)',
+              fontWeight: 600,
+              marginBottom: '0.5rem',
+            }}>
+              About Me
+            </p>
+            <h1 style={{
+              fontSize: '2.6rem',
+              fontWeight: 700,
+              letterSpacing: '-0.03em',
+              color: 'var(--text)',
+              lineHeight: 1.1,
+              marginBottom: '0.75rem',
+            }}>
+              The Whale Dragon
+            </h1>
+            <div style={{
+              height: '3px',
+              width: '3rem',
+              borderRadius: '99px',
+              background: 'linear-gradient(90deg, var(--accent), var(--accent2))',
+            }} />
+          </div>
 
           <div className="text-[var(--muted)] leading-relaxed space-y-6 max-w-2xl">
             <p>

@@ -22,7 +22,7 @@ export default function Header() {
         letterSpacing: '-0.02em',
         textDecoration: 'none',
       }}>
-        TheWhaleDragonKodex
+        The Kodex
       </Link>
 
       <nav style={{
