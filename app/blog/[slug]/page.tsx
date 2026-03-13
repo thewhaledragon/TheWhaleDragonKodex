@@ -77,7 +77,6 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Title */}
           <h1 style={{
-            fontFamily: "'Lexend', sans-serif",
             fontSize: 'clamp(1.75rem, 4vw, 2.4rem)',
             fontWeight: 700,
             lineHeight: 1.18,

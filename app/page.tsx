@@ -31,7 +31,6 @@ export default function HomePage() {
             Writing
           </p>
           <h1 style={{
-            fontFamily: "'Lexend', sans-serif",
             fontSize: '2.6rem',
             fontWeight: 700,
             letterSpacing: '-0.03em',
@@ -83,7 +82,6 @@ export default function HomePage() {
 
                 {/* Title */}
                 <h2 style={{
-                  fontFamily: "'Lexend', sans-serif",
                   fontSize: '1.35rem',
                   fontWeight: 600,
                   lineHeight: 1.3,

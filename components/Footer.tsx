@@ -6,7 +6,6 @@ export default function Footer() {
       padding: '2.2rem 1.5rem',
       fontSize: '0.82rem',
       color: 'var(--muted)',
-      fontFamily: "'Lexend', sans-serif",
       letterSpacing: '0.01em',
     }}>
       <p>

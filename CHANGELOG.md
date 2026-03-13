@@ -2,13 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
 ## [Unreleased]
 
+### Added
+- "Core Competencies" section to the About Me page.
+- "Featured Research & Builds" section to the About Me page with project tags.
+
 ### Changed
+- Redesigned the About Me page with a more premium aesthetic, including glassmorphism cards and a vertical timeline.
+- Migrated global font to **Lexend** using `next/font/google` for better performance and consistency.
+- Synchronized About page content with latest research updates from `about.md`.
+- Removed redundant inline CSS font declarations across all components and pages.
+- Refined the timeline UI with better spacing and hover states.
 - Complete redesign of `app/about/page.tsx`: minimal, professional layout with a single vertical chronological timeline that merges Work Experience and Education. Removed all section icons; replaced with clean dot-and-line timeline connectors. Hero section retains gradient headline and key stats row. Selected Work now uses a compact 3-column card grid. Lexend font is enforced globally; existing color scheme (`--accent`, `--accent2`, `--muted`, `--border`, etc.) is used throughout with no new CSS variables.
 
 ### Fixed

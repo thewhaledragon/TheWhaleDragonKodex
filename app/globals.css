@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,13 +23,12 @@ html {
 }
 
 body {
-  font-family: 'Lexend', sans-serif;
+  font-family: var(--font-lexend), sans-serif;
   font-weight: 300;
   line-height: 1.72;
   font-size: 17px;
   background: var(--bg);
   color: var(--text);
-  -webkit-font-smoothing: antialiased;
 }
 
 /* ── Global selection highlight ── */
@@ -56,7 +54,6 @@ a {
 }
 
 .prose h2 {
-  font-family: 'Lexend', sans-serif;
   font-size: 1.45rem;
   font-weight: 600;
   margin: 2.8rem 0 1rem;
@@ -65,7 +62,6 @@ a {
 }
 
 .prose h3 {
-  font-family: 'Lexend', sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
   margin: 2rem 0 0.7rem;

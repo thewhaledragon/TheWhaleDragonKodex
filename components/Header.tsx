@@ -16,7 +16,6 @@ export default function Header() {
       background: 'rgba(242,248,244,0.92)',
     }}>
       <Link href="/" style={{
-        fontFamily: "'Lexend', sans-serif",
         fontSize: '1.25rem',
         fontWeight: 700,
         color: 'var(--accent)',
