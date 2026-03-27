@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import PageIntro from '@/components/PageIntro'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
   description:
     'AI/ML researcher building multi-agent systems, financial forecasting models, and simulation pipelines.',
 }
+
+export const dynamic = 'force-static'
 
 /* ─────────────────────────── Timeline data ─────────────────────────── */
 
@@ -152,42 +155,15 @@ function TimelineItem({ entry, isLast }: { entry: TimelineEntry; isLast: boolean
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[var(--bg)]">
-
       <Header />
 
-      <main style={{ maxWidth: '700px', margin: '0 auto', padding: '3.5rem 2rem 6rem' }}>
-
-        {/* ── Hero ── */}
+      <main className="page-main">
         <section className="mb-24 animate-fade-up">
-
-          <div style={{ marginBottom: '3rem' }}>
-            <p style={{
-              fontSize: '0.72rem',
-              letterSpacing: '0.18em',
-              textTransform: 'uppercase',
-              color: 'var(--accent)',
-              fontWeight: 600,
-              marginBottom: '0.5rem',
-            }}>
-              About Me
-            </p>
-            <h1 style={{
-              fontSize: '2.6rem',
-              fontWeight: 700,
-              letterSpacing: '-0.03em',
-              color: 'var(--text)',
-              lineHeight: 1.1,
-              marginBottom: '0.75rem',
-            }}>
-              The Whale Dragon
-            </h1>
-            <div style={{
-              height: '3px',
-              width: '3rem',
-              borderRadius: '99px',
-              background: 'linear-gradient(90deg, var(--accent), var(--accent2))',
-            }} />
-          </div>
+          <PageIntro
+            eyebrow="About Me"
+            title="The Whale Dragon"
+            description="AI/ML researcher interested in neural networks, simulation systems, and thoughtful tooling."
+          />
 
           <div className="text-[var(--muted)] leading-relaxed space-y-6 max-w-2xl">
             <p>
@@ -248,9 +224,7 @@ export default function AboutPage() {
         </section> */}
 
       </main>
-
       <Footer />
-
     </div>
   )
 }

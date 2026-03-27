@@ -4,6 +4,7 @@ date: "2026-03-11"
 tag: "Deep Learning"
 excerpt: "In order to updates the weights and biases ..."
 subtitle: "How to updated the parameters of a neural network?"
+coverImage: "blog_asset/neuron.png"
 ---
 ### Introduction
 
@@ -17,6 +18,8 @@ print(a)
 ```
 
 $$x = y + x$$
+
+![Neural network diagram showing the flow of activations and gradients](blog_asset/b1_nn.png)
 
 ### References
 

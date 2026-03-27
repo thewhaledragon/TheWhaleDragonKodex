@@ -1,12 +1,7 @@
 import type { Metadata } from 'next'
-import { Lexend } from 'next/font/google'
 import './globals.css'
 
-const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
-})
+const basePath = process.env.NODE_ENV === 'production' ? '/TheWhaleDragonKodex' : ''
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +17,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={lexend.variable}>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href={`${basePath}/katex/katex.min.css`} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   )
