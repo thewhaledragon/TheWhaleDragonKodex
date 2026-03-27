@@ -72,9 +72,9 @@ export default async function BlogPostPage({ params }: Props) {
 
         <div className="blog-post-footer">
           <p className="blog-post-footer__note">
-            Got thoughts? Reply by email:{' '}
-            <a href="mailto:you@example.com" className="blog-post-footer__link">
-              you@example.com
+            Found some mistakes? Contact me:{' '}
+            <a href="mailto:thewhaledragon@gmail.com" className="blog-post-footer__link">
+              thewhaledragon@gmail.com
             </a>
           </p>
           <Link href="/" className="blog-post-footer__backlink">

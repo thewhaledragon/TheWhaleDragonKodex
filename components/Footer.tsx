@@ -4,10 +4,10 @@ export default function Footer() {
       <p className="site-footer__text">
         © {new Date().getFullYear()} The Kodex ·{' '}
         <a
-          href="https://github.com/thewhaledragon"
+          href="https://x.com/thewhaledragon"
           className="site-footer__link"
         >
-          TheWhaleDragon
+          The Whale Dragon
         </a>
       </p>
     </footer>
