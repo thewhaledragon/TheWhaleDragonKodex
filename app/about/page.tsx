@@ -162,7 +162,7 @@ export default function AboutPage() {
           <PageIntro
             eyebrow="About Me"
             title="The Whale Dragon"
-            description="AI/ML researcher interested in neural networks, simulation systems, and thoughtful tooling."
+            description="Neural Network ❤️ Humanity."
           />
 
           <div className="text-[var(--muted)] leading-relaxed space-y-6 max-w-2xl">

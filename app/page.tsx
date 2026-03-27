@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'The Kodex',
-  description: 'Writing about AI × Music.',
+  description: 'My Study Notes on AI.',
 }
 
 export const dynamic = 'force-static'
@@ -23,7 +23,7 @@ export default function HomePage() {
         <PageIntro
           eyebrow="Writing"
           title="All Posts"
-          description="Notes on neural networks, systems, and experiments worth keeping around."
+          description="My Study Notes on AI."
         />
 
         {posts.length === 0 ? (

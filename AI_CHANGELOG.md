@@ -9,6 +9,8 @@
 - Added a vendored `public/katex/` stylesheet and font bundle so math styles load without relying on package CSS resolution at runtime.
 
 ### Modified
+- Updated homepage and root metadata descriptions to "My Study Notes on AI."
+- Updated the about page intro description to "Neural Network ❤️ Humanity."
 - Unified the content width and spacing across the home, blog, and about pages.
 - Refined the blog listing and blog post UI with cleaner cards, cover media treatment, and shared metadata styling.
 - Simplified the header and footer styling, including safer sticky-header spacing to prevent top clipping.
@@ -23,4 +25,5 @@
 - Fixed the repeated dev-server module resolution error for `katex/dist/katex.min.css` by loading KaTeX styles from `public/` instead of importing package CSS in `app/layout.tsx`.
 
 ### Notes
+- Verified the app still compiles successfully with `npm run build`; I could not reproduce a compile error from the current checked-in files.
 - Installed markdown rendering dependencies: `remark-gfm`, `remark-math`, `remark-rehype`, `rehype-katex`, `rehype-stringify`, `unist-util-visit`, and `katex`.
