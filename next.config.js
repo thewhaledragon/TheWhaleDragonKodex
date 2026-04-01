@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/TheWhaleDragonKodex' : '';
+const basePath = isProd ? '/thekodex' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
